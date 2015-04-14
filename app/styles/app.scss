@@ -1,0 +1,12 @@
+@function spin($count) {
+  $j: 0;
+  @for $i from 1 through $count {
+    $j: $j + 1;
+  }
+
+  @return green;
+}
+
+.foo {
+  color: spin(1000000);
+}
